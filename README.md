@@ -1,5 +1,7 @@
 # ResumeIQ — Intelligent Resume Screening App
 
+**Live Demo:** https://resumeiq-green.vercel.app
+
 A production-ready web application for screening and ranking multiple resumes against custom job criteria using AI-powered text analysis.
 
 ## Features
@@ -128,12 +130,18 @@ curl -X POST -H "Content-Type: application/json" \
 
 ## Project Structure
 ```
-resume_app/
-├── app.py                 # Flask backend with analysis engine
+resumeiq/
+├── app.py                 # Flask backend (local development)
+├── api/
+│   └── index.py           # Vercel serverless function
+├── public/
+│   └── index.html         # Frontend (with /api/ routes for Vercel)
+├── static_index.html      # Static entry point served by Vercel
+├── index.html             # Original frontend (for local development)
+├── vercel.json            # Vercel routing & build configuration
 ├── requirements.txt       # Python dependencies
-├── README.md             # Documentation
-└── static/
-    └── index.html        # Single-page frontend application
+├── .vercelignore          # Files excluded from Vercel deployment
+└── README.md              # Documentation
 ```
 
 ## Requirements
