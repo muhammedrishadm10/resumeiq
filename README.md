@@ -1,6 +1,6 @@
 # ResumeIQ — Intelligent Resume Screening App
 
-**Live Demo:** https://resumeiq-green.vercel.app
+**Live Demo:** resumeiq-vert.vercel.app
 
 A production-ready web application for screening and ranking multiple resumes against custom job criteria using AI-powered text analysis.
 
